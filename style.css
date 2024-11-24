@@ -1,0 +1,359 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styling untuk navigation */
+nav {
+    background-color: #3a3a3a;
+    padding: 15px 0;
+}
+
+nav .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    font-size: 1.8em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu ul li {
+    display: inline;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav .menu ul li a:hover {
+    color: #f0a500;
+}
+
+/* Styling untuk bagian home */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#home img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.kolom {
+    max-width: 500px;
+}
+
+.kolom p.deskripsi {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.kolom h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.kolom p {
+    font-size: 1.1em;
+}
+
+/* Styling untuk bagian anggota kelompok */
+#Kelompok {
+    background-color: #3a3a3a;
+    padding: 50px 10%;
+    margin-top: 50px;
+}
+
+#Kelompok h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    position: relative;
+}
+
+/* Styling untuk member */
+.member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada member animasi */
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.member h3 {
+    font-size: 1.4em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 1.1em;
+    color: #000000;
+}
+
+/* Bagian Materi */
+#Materi h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    color: #000000;
+}
+
+#Materi img {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+
+#Materi .materi-text {
+    flex: 5;
+    max-width: 60%;
+}
+
+.materi-text img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.materi-text h1, .materi-text h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.materi-text p, .materi-text ul, .materi-text ol {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.materi-text pre {
+    background-color: #f0a500;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+/* Wrapper umum */
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Mengatur flexbox untuk materi item */
+.materi-item {
+    display: flex; /* Menyusun gambar dan teks berdampingan */
+    align-items: flex-start; /* Menjaga gambar dan teks sejajar di bagian atas */
+    margin-bottom: 20px;
+    gap: 50px; /* Memberi jarak antara gambar dan teks */
+}
+
+/* Gaya teks materi */
+.materi-text {
+    width: 60%; /* Teks mengisi 60% lebar kontainer */
+    line-height: 1.6; /* Membuat jarak antar baris teks lebih nyaman dibaca */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 50px auto;
+    background-color: #3a3a3a;
+    padding: 50px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.step {
+    background-color: #f0a500;
+    border-left: 40px solid #f0a500;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.step .step-title {
+    font-weight: bold;
+    color: #000000;
+}
+
+.step .step-details {
+    margin-left: 20px;
+    color: #000000;
+}
+
+.step .result {
+    font-weight: bold;
+    color: #000000;
+}
+
+h/* Mengubah background halaman */
+body {
+    background-color: #a81717; /* Latar belakang halaman */
+    margin: 0;
+    padding: 0;
+    border: 15px solid #f0a500; /* Memberikan border pada pinggir halaman */
+    padding: 20px; /* Memberikan ruang di dalam border */
+}
+
+/* Styling untuk header atau judul */
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #f0a500;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk form kuis */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling untuk setiap item kuis */
+.quiz-item {
+    padding: 20px;
+    background-color: #f0a500;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quiz-item:hover {
+    transform: scale(1.02);
+}
+
+.quiz-item p {
+    font-size: 16px;
+    color: #060606;
+}
+
+/* Styling untuk jawaban radio button */
+.quiz-item label {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Styling untuk hasil */
+#result1, #result2, #result3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Warna hasil benar dan salah */
+#result1.green, #result2.green, #result3.green {
+    color: green;
+}
+
+#result1.red, #result2.red, #result3.red {
+    color: red;
+}
+
+#result1.orange, #result2.orange, #result3.orange {
+    color: orange;
+}
+
+/* Styling untuk tombol */
+.submit-btn {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+html {
+    scroll-behavior: smooth;
+}
